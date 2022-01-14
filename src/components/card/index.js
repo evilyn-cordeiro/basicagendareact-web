@@ -1,5 +1,5 @@
 import React from 'react';
-import IconSelfCare from '../icon/SelfCareIcon';
+import IconSelfCare, { IconElipse } from '../icon';
 import { StyledCard, StyledTop, Title, Top } from './styles';
 /**
  * 
@@ -12,7 +12,7 @@ export default function CardApp() {
     <StyledTop>
       <StyledCard>
         <Top>
-          <Title>Self Care</Title> <IconSelfCare />
+          <Title>Self Care</Title> <IconElipse/> <IconSelfCare/>
         </Top>
       </StyledCard>
     </StyledTop>
