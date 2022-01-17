@@ -11,6 +11,8 @@ body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
     color:white;
+    background-color: hsla(226, 43%, 14%, 1);
+
   }
 
 code {

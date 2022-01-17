@@ -6,8 +6,8 @@ import styled from 'styled-components';
  * personalizada.
  */
 export const StyledTop = styled.div`
-  width: 300px;
-  height: 250px;
+  width: 271px;
+  height: 123px;
   display: flex;
   align-items: end;
   background-color:hsl(43, 84%, 65%);
@@ -23,8 +23,8 @@ export const IconContainer = styled.div`
 `;
 
 export const StyledCard = styled.div`
-  width:  300px;
-  height: 200px;
+  width:  272px;
+  height: 175px;
   background-color: hsl(235, 46%, 20%);
   border-radius:20px;
   z-index: 2;
