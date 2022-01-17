@@ -7,13 +7,14 @@ import styled from 'styled-components';
  */
 export const StyledTop = styled.div`
   width: 271px;
-  height: 123px;
+  height: 216px;
   display: flex;
-  align-items: end;
+  align-items:end;
   background-color:hsl(43, 84%, 65%);
   border-radius:20px;
   font-size: 20px;
   position: relative;
+  overflow:hidden;
 `;
 
 export const IconContainer = styled.div`
@@ -23,10 +24,10 @@ export const IconContainer = styled.div`
 `;
 
 export const StyledCard = styled.div`
-  width:  272px;
+  width:  280px;
   height: 175px;
   background-color: hsl(235, 46%, 20%);
-  border-radius:20px;
+  border-radius: 20px 20px 0 0;
   z-index: 2;
 `;
 
@@ -39,7 +40,7 @@ export const StyledCard = styled.div`
  * @StyledCard que recebe o título e o ícone.
  */
 export const Top = styled.div`
-  padding:28px 26px;
+  padding: 20px 26px 7px 7px;
   display: flex;
   align-items: center;
   justify-content:space-between;

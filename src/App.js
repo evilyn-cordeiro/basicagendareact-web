@@ -1,10 +1,12 @@
 import React from 'react';
-import { StylePlay, StyleSelfCare, StyleSocial, StyleSports, StyleStudy, StyleWork } from './styles';
+import { StylePlay, StyleSelfCare, StyleSocial, StyleSports, StyleStudy, StyleWork, Container, Row,} from './styles';
 import IconSelfCare, { IconElipse, IconPlay, IconSocial, IconSports, IconStudy, IconWork } from './components/icon';
+import { StyledCard } from './components/card/styles';
 
 export default function App() {
   return (
-    <div>
+    <Container>
+      <Row>
       <StyleWork
         icon={<IconWork />}
         title=" Work"
@@ -40,7 +42,8 @@ export default function App() {
         title=" SelfCare"
         hours="2hrs"
         subtitle="Last Week - 2hrs"
-      />
-    </div>
+      /> 
+      </Row>
+    </Container>
   );
-}
+  }
