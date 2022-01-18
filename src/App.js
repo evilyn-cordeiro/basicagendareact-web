@@ -1,7 +1,7 @@
 import React from 'react';
 import { StylePlay, StyleSelfCare, StyleSocial, StyleSports, StyleStudy, StyleWork, Container, Row, StyledProfile, } from './styles';
 import IconSelfCare, { IconElipse, IconPlay, IconSocial, IconSports, IconStudy, IconWork } from './components/icon';
-import { ProfileContainer } from './components/card';
+import ProfileContainer from './components/card/profile';
 
 export default function App() {
   return (

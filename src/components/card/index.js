@@ -1,7 +1,14 @@
 import React from 'react';
-
+/**
+ * As importações estão sendo realizadas
+ * para que cada item possa ser utilizado e 
+ * chamado quantas vezes necessário
+ * ao longo do código. E quando chamado
+ * e não importado no início do código
+ * mensagens de erro irão aparecer.
+ */
 import IconSelfCare, { IconElipse } from '../icon';
-import { StyledCard, StyledTop, Title, Title1, Top, Center, Subtitle, IconContainer, StyledProfile, StyledFooter } from './styles';
+import { StyledCard, StyledTop, Title, Title1, Top, Center, Subtitle, IconContainer, StyledProfile, StyledFooter, StyledProfileEnd } from './styles';
 /**
  * 
  * @returns StyledCard constatado como o card principal
@@ -39,15 +46,5 @@ export default function CardApp({
         </Center>
       </StyledCard>
     </StyledTop>
-  );
-}
-
-export function ProfileContainer() {
-  return (
-    <StyledProfile>
-      <StyledFooter>
-  
-      </StyledFooter>
-    </StyledProfile>
   );
 }

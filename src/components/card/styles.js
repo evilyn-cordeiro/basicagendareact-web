@@ -79,20 +79,3 @@ export const Subtitle = styled.p`
   font-weight:300;  
 `;
 
-export const StyledProfile = styled.div`
-  width: 271px;
-  height: 484px;
-  background-color: hsla(236, 45%, 20%, 1);
-  border-radius: 20px;
-  align-items;
-  display: flex;
-  justify-content:space-between;
-  `;
-  
-  export const StyledFooter = styled.div `
-  height: 310px;
-  width: 271px;
-  border-radius: 20px;
-  background-color: hsla(235, 45%, 61%, 1);
-  
-`;
