@@ -8,7 +8,7 @@ import React from 'react';
  * mensagens de erro irão aparecer.
  */
 import IconSelfCare, { IconElipse } from '../icon';
-import { StyledCard, StyledTop, Title, Title1, Top, Center, Subtitle, IconContainer, StyledProfile, StyledFooter, StyledProfileEnd } from './styles';
+import { StyledCard, StyledTop, Title, Title1, Top, Center, Subtitle, Status, IconContainer, StyledProfile, StyledFooter, StyledProfileEnd } from './styles';
 /**
  * 
  * @returns StyledCard constatado como o card principal
@@ -20,6 +20,7 @@ export default function CardApp({
   title,
   hours,
   subtitle,
+  status,
   ...props
   /**
    * propriedades especificadas na função 
@@ -42,7 +43,7 @@ export default function CardApp({
         </Top>
         <Center>
           <Title1>{hours}</Title1>
-          <Subtitle>{subtitle}</Subtitle>
+          <Subtitle>{status}{subtitle}</Subtitle>
         </Center>
       </StyledCard>
     </StyledTop>

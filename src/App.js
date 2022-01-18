@@ -1,50 +1,82 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StylePlay, StyleSelfCare, StyleSocial, StyleSports, StyleStudy, StyleWork, Container, Row, StyledProfile, } from './styles';
 import IconSelfCare, { IconElipse, IconPlay, IconSocial, IconSports, IconStudy, IconWork } from './components/icon';
 import ProfileContainer from './components/card/profile';
+import { data } from './constants';
+
 
 export default function App() {
+  const [selected, setSelected] = useState("daily")
+  function handleClick(label) {
+    setSelected(label)
+  }
+
+  function getname(key) {
+    switch (key) {
+      case 'daily':
+        return "Last Day - "
+      case 'weekly':
+        return "Last Week - "
+      default:
+        return "Last Month - "
+    }
+  }
+
   return (
     <Container>
-      <ProfileContainer />
+      <ProfileContainer
+        avatar={require('./others/img/image-jeremy.png')}
+        name="Jeremy Robson"
+        /**
+         *propagação da função 
+         *  */
+        onClick={(value) => { handleClick(value) }}
+      />
       <Row>
         <StyleWork
           icon={<IconWork />}
-          title=" Work"
-          hours="32hrs"
-          subtitle="Last Week - 36hrs"
+          title={data[0].title}
+          hours={`${data[0].timeframes[selected].current}hrs`}
+          subtitle={`${data[0].timeframes[selected].previous}hrs`}
+          status={getname(selected)}
         />
         <StylePlay
           icon={<IconPlay />}
-          title=" Play"
-          hours="10hrs"
-          subtitle="Last Week - 8hrs"
+          title={data[1].title}
+          hours={`${data[1].timeframes[selected].current}hrs`}
+          subtitle={`${data[1].timeframes[selected].previous}hrs`}
+          status={getname(selected)}
         />
         <StyleStudy
           icon={<IconStudy />}
-          title="Study"
-          hours="4hrs"
-          subtitle="Last Week - 7hrs"
+          title={data[2].title}
+          hours={`${data[2].timeframes[selected].current}hrs`}
+          subtitle={`${data[2].timeframes[selected].previous}hrs`}
+          status={getname(selected)}
         />
         <StyleSports
           icon={<IconSports />}
-          title=" Sports"
-          hours="20hrs"
-          subtitle="Last Week - 35hrs"
+          title={data[3].title}
+          hours={`${data[3].timeframes[selected].current}hrs`}
+          subtitle={`${data[3].timeframes[selected].previous}hrs`}
+          status={getname(selected)}
         />
         <StyleSocial
           icon={<IconSocial />}
-          title=" Social"
-          hours="5hrs"
-          subtitle="Last Week - 10hrs"
+          title={data[4].title}
+          hours={`${data[4].timeframes[selected].current}hrs`}
+          subtitle={`${data[4].timeframes[selected].previous}hrs`}
+          status={getname(selected)}
         />
         <StyleSelfCare
           icon={<IconSelfCare />}
-          title=" SelfCare"
-          hours="2hrs"
-          subtitle="Last Week - 2hrs"
+          title={data[5].title}
+          hours={`${data[5].timeframes[selected].current}hrs`}
+          subtitle={`${data[5].timeframes[selected].previous}hrs`}
+          status={getname(selected)}
         />
       </Row>
     </Container>
   );
 }
+

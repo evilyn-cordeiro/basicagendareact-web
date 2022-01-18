@@ -78,4 +78,9 @@ export const Subtitle = styled.p`
   font-size: 12px;
   font-weight:300;  
 `;
+export const Status = styled.p`
+font-size:12px;
+font-weight:300;
+
+`;
 
