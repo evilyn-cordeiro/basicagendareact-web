@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import CardApp from './components/card';
+import CardApp, {ProfileContent} from './components/card';
 
 export const Container = styled.div`
+  height: 100vh;
+  width: 1224px;
   display:flex;
-  flex-wrap:wrap;
-  align-content:space-between;
+  justify-content:space-between;
+  align-items:center;
 `;
 
 export const StylePlay = styled(CardApp)`

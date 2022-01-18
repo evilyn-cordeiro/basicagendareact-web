@@ -1,6 +1,7 @@
 import React from 'react';
+
 import IconSelfCare, { IconElipse } from '../icon';
-import { StyledCard, StyledTop, Title, Title1, Top, Center, Subtitle, IconContainer } from './styles';
+import { StyledCard, StyledTop, Title, Title1, Top, Center, Subtitle, IconContainer, StyledProfile, StyledFooter } from './styles';
 /**
  * 
  * @returns StyledCard constatado como o card principal
@@ -13,15 +14,15 @@ export default function CardApp({
   hours,
   subtitle,
   ...props
-/**
- * propriedades especificadas na função 
- * @CardApp para a reutilização do componente
- * modificando apenas as informações internas.
- * Ou seja:. Qualquer propriedade pode ser especificada
- * e quando não acrescenta-se "...props" que designará 
- * outras propriedades que o elemento terá como no 
- * exemplo aplicado: cor.
- *  */
+  /**
+   * propriedades especificadas na função 
+   * @CardApp para a reutilização do componente
+   * modificando apenas as informações internas.
+   * Ou seja:. Qualquer propriedade pode ser especificada
+   * e quando não acrescenta-se "...props" que designará 
+   * outras propriedades que o elemento terá como no 
+   * exemplo aplicado: cor.
+   *  */
 }) {
   return (
     <StyledTop {...props}>
@@ -38,5 +39,15 @@ export default function CardApp({
         </Center>
       </StyledCard>
     </StyledTop>
+  );
+}
+
+export function ProfileContainer() {
+  return (
+    <StyledProfile>
+      <StyledFooter>
+  
+      </StyledFooter>
+    </StyledProfile>
   );
 }

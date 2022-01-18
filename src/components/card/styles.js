@@ -11,7 +11,8 @@ export const StyledTop = styled.div`
   display: flex;
   align-items:end;
   background-color:hsl(43, 84%, 65%);
-  border-radius:20px;
+  border-radius: 15px;
+  border:none;
   font-size: 20px;
   position: relative;
   overflow:hidden;
@@ -27,7 +28,7 @@ export const StyledCard = styled.div`
   width:  280px;
   height: 175px;
   background-color: hsl(235, 46%, 20%);
-  border-radius: 20px 20px 0 0;
+  border-radius: 15px 15px 0 0;
   z-index: 2;
 `;
 
@@ -40,7 +41,7 @@ export const StyledCard = styled.div`
  * @StyledCard que recebe o título e o ícone.
  */
 export const Top = styled.div`
-  padding: 20px 26px 7px 7px;
+  padding: 35px 20px 7px;
   display: flex;
   align-items: center;
   justify-content:space-between;
@@ -57,7 +58,7 @@ export const Title = styled.p`
 
 export const Center = styled.div`
   margin: 0;
-  margin-left:20px;
+  margin-left: 25px;
 `;
 /**
  * Estilo do Título1 do card principal
@@ -65,7 +66,7 @@ export const Center = styled.div`
  */
 export const Title1 = styled.p`
   font-size: 60px;
-  font-weight: 300;
+  font-weight: 400;
 `;
 
 /**
@@ -75,4 +76,23 @@ export const Title1 = styled.p`
  */
 export const Subtitle = styled.p`  
   font-size: 12px;
+  font-weight:300;  
+`;
+
+export const StyledProfile = styled.div`
+  width: 271px;
+  height: 484px;
+  background-color: hsla(236, 45%, 20%, 1);
+  border-radius: 20px;
+  align-items;
+  display: flex;
+  justify-content:space-between;
+  `;
+  
+  export const StyledFooter = styled.div `
+  height: 310px;
+  width: 271px;
+  border-radius: 20px;
+  background-color: hsla(235, 45%, 61%, 1);
+  
 `;
