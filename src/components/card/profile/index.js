@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledFooter, StyledProfile, StyledProfileEnd, StyledAvatarName, StyleReport, Avatar } from './style';
+import { StyledFooter, StyledProfile, StyledProfileEnd, StyledAvatarName, StyleReport, Avatar, StyledProfileButton } from './style';
 
 export default function ProfileContainer({
   name,
@@ -24,9 +24,9 @@ export default function ProfileContainer({
         </StyledAvatarName>
       </StyledFooter>
       <StyledProfileEnd>
-        <button onClick={() => { handleButton("daily") }}>Daily</button>
-        <button onClick={() => { handleButton("weekly") }}>Weekly</button>
-        <button onClick={() => { handleButton("monthly") }}>Monthly</button>
+        <StyledProfileButton onClick={() => { handleButton("daily") }}>Daily</StyledProfileButton>
+        <StyledProfileButton onClick={() => { handleButton("weekly") }}>Weekly</StyledProfileButton>
+        <StyledProfileButton onClick={() => { handleButton("monthly") }}>Monthly</StyledProfileButton>
       </StyledProfileEnd>
     </StyledProfile>
 

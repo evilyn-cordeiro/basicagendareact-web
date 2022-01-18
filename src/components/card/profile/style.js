@@ -53,6 +53,17 @@ export const StyledProfileEnd = styled.div`
     justify-content: space-between;
   `;
 
+  export const StyledProfileButton = styled.button`
+    border: none;
+    font-size: 14px;
+    background-color: #1C1F4A;
+    color: white;
+    cursor: pointer;
+    weight: 400;
+    display:flex;
+  
+  `;
+
   export const StyleReport = styled.div` 
     width: 81px;
     height: 17px;
