@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { StylePlay, StyleSelfCare, StyleSocial, StyleSports, StyleStudy, StyleWork, Container, Row, StyledProfile, } from './styles';
-import IconSelfCare, { IconElipse, IconPlay, IconSocial, IconSports, IconStudy, IconWork } from './components/icon';
+import { StylePlay, StyleSelfCare, StyleSocial, StyleSports, StyleStudy, StyleWork, Container, Row, } from './styles';
+import IconSelfCare, { IconPlay, IconSocial, IconSports, IconStudy, IconWork } from './components/icon';
 import ProfileContainer from './components/card/profile';
 import { data } from './constants';
 
