@@ -53,15 +53,22 @@ export const StyledProfileEnd = styled.div`
     justify-content: space-between;
   `;
 
+  /**
+   * Estilização dos botões 'menu' que recebem
+   * Daily, weekly e monthly.
+   */
   export const StyledProfileButton = styled.button`
     border: none;
     font-size: 14px;
     background-color: #1C1F4A;
-    color: white;
+    color: #6F76C8;
     cursor: pointer;
     weight: 400;
     display:flex;
   
+    &:hover{
+      color:hsl(236, 100%, 87%);
+    }
   `;
 
   export const StyleReport = styled.div` 

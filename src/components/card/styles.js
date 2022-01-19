@@ -29,7 +29,11 @@ export const StyledCard = styled.div`
   height: 175px;
   background-color: hsl(235, 46%, 20%);
   border-radius: 15px 15px 0 0;
+  cursor:pointer;
   z-index: 2;
+  &:hover{
+    background-color: #2D337B;
+  }
 `;
 
 /**

@@ -7,11 +7,9 @@ export default function ProfileContainer({
   onClick,
   ...props
 }) {
-  console.log(avatar);
 
   function handleButton(label) {
     if (onClick) onClick(label);
-
   }
 
   return (

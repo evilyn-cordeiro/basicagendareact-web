@@ -22,6 +22,7 @@ export default function CardApp({
   subtitle,
   status,
   ...props
+  
   /**
    * propriedades especificadas na função 
    * @CardApp para a reutilização do componente
