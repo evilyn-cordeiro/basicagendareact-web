@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 /**
  * @StyledProfile é o item que contém
  * a cor mais escura e está localizado
@@ -13,6 +12,10 @@ export const StyledProfile = styled.div`
   background-color: hsla(236, 45%, 20%, 1);
   border-radius: 20px;
   align-items:end;
+
+  @media(max-width:375px){
+    height: 180px;
+  }
 `;
   
 export const StyledAvatarName = styled.div`
@@ -20,6 +23,10 @@ export const StyledAvatarName = styled.div`
  height: 122px;
  font-size: 35px;
  font-weight: 300;
+
+ @media(max-width:375px){
+  font-size:25px;
+}
 `;
 /**
  * StyledFooter é o item que contém 
@@ -38,19 +45,29 @@ export const StyledFooter = styled.div `
   align-items: start;
   justify-content:space-evenly;
   padding: 0 30px;
-  
+
+  @media(max-width:375px){
+    height: 120px;
+  }
 `;
 /**
  * StyledProfileEnd contém o menu de
  * dias, semanas e meses.
  */
-export const StyledProfileEnd = styled.div`
+export const    StyledProfileEnd = styled.div`
     width: 70px;
     height: 87px;
     margin: 30px;
     display: flex;
     flex-direction:column; //Muda a posição do eixo principal
     justify-content: space-between;
+
+    @media(max-width:375px){
+      width: 200px;
+      height: 20px;
+      flex-direction:row;
+      align-items: center;
+      margin-top: 25px;
   `;
 
   /**
@@ -84,4 +101,6 @@ export const StyledProfileEnd = styled.div`
     border-radius:50%;
     border:3px solid white;
   
+    @media(max-width:375px){
+      width:60px;
   `;

@@ -7,6 +7,10 @@ export const Container = styled.div`
   display:flex;
   justify-content:space-between;
   align-items:center;
+
+  @media(max-width: 375px) {
+    flex-direction: column;
+  }
 `;
 
 export const StylePlay = styled(CardApp)`
@@ -35,10 +39,17 @@ background-color: hsla(43, 84%, 65%, 1);
 `;
 
 export const Row = styled.div`
-    width:900px;
+    max-width:900px;
     height: 474px;
     display:flex; 
     flex-wrap:wrap;
     justify-content:space-between;
     align-content:space-between;
+
+    @media(max-width: 375px) {
+      flex-direction: column;
+      max-width: 800px;
+      height:100vh;
+      flex-wrap:nowrap;
+    }
 `
