@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CardApp, {ProfileContent} from './components/card';
+import CardApp from './components/card';
 
 export const Container = styled.div`
   height: 100vh;
