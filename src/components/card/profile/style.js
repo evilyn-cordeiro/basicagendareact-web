@@ -15,17 +15,16 @@ export const StyledProfile = styled.div`
 
   @media(max-width:375px){
     height: 180px;
+    align-items: center;
   }
 `;
-  
-export const StyledAvatarName = styled.div`
- width: 195px;
- height: 122px;
- font-size: 35px;
- font-weight: 300;
 
- @media(max-width:375px){
-  font-size:25px;
+export const StyledAvatarName = styled.div`
+font-size: 35px;
+font-weight: 300;
+
+@media(max-width:375px){
+  font-size:20px;
 }
 `;
 /**
@@ -47,7 +46,11 @@ export const StyledFooter = styled.div `
   padding: 0 30px;
 
   @media(max-width:375px){
+    width: 100%;
     height: 120px;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
   }
 `;
 /**
@@ -103,4 +106,5 @@ export const    StyledProfileEnd = styled.div`
   
     @media(max-width:375px){
       width:60px;
+      height:60px;
   `;
