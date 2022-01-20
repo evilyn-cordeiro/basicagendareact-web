@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react/cjs/react.development';
 import { StyledFooter, StyledProfile, StyledProfileEnd, StyledAvatarName, StyleReport, Avatar, StyledProfileButton } from './style';
 
 export default function ProfileContainer({
@@ -7,8 +8,10 @@ export default function ProfileContainer({
   onClick,
   ...props
 }) {
+  const [isActive, setisActive] = useState('daily');
 
   function handleButton(label) {
+    setisActive(label)
     if (onClick) onClick(label);
   }
 
@@ -22,11 +25,11 @@ export default function ProfileContainer({
         </StyledAvatarName>
       </StyledFooter>
       <StyledProfileEnd>
-        <StyledProfileButton onClick={() => { handleButton("daily") }}>Daily</StyledProfileButton>
-        <StyledProfileButton onClick={() => { handleButton("weekly") }}>Weekly</StyledProfileButton>
-        <StyledProfileButton onClick={() => { handleButton("monthly") }}>Monthly</StyledProfileButton>
+        <StyledProfileButton active={isActive === 'daily' ? true : false} onClick={() => { handleButton("daily") }}>Daily</StyledProfileButton>
+        <StyledProfileButton active={isActive === 'weekly' ? true : false} onClick={() => { handleButton("weekly") }}>Weekly</StyledProfileButton>
+        <StyledProfileButton active={isActive === 'monthly' ? true : false} onClick={() => { handleButton("monthly") }}>Monthly</StyledProfileButton>
       </StyledProfileEnd>
-    </StyledProfile>
+    </StyledProfile >
 
   );
 }

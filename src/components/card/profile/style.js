@@ -81,13 +81,13 @@ export const    StyledProfileEnd = styled.div`
     border: none;
     font-size: 14px;
     background-color: #1C1F4A;
-    color: #6F76C8;
+    color: ${props => props.active ? 'hsl(236, 100%, 87%)' : '#6F76C8' };
     cursor: pointer;
     weight: 400;
     display:flex;
   
-    &:hover{
-      color:hsl(236, 100%, 87%);
+    .active a{
+      color:#6F76C8X;
     }
   `;
 
