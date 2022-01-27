@@ -1,3 +1,8 @@
+/**
+ * Antes de importar o styled-componentes 
+ * é necessário instala-lo no projeto
+ * via terminal.
+ */
 import styled from 'styled-components';
 
 /**

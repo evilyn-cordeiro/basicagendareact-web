@@ -1,7 +1,13 @@
+/**
+ * Todos os componentes, estilos e etc precisam serem 
+ * importados para que possam ser utilizados ao longo
+ * do código.
+ */
+
 import React, { useState } from 'react';
 import { StylePlay, StyleSelfCare, StyleSocial, StyleSports, StyleStudy, StyleWork, Container, Row, } from './styles';
 import IconSelfCare, { IconPlay, IconSocial, IconSports, IconStudy, IconWork } from './components/icon';
-import ProfileContainer from './components/card/profile';
+import ProfileContainer from './components/profile';
 import { data } from './constants';
 
 

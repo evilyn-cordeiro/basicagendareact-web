@@ -35,9 +35,7 @@ export default function CardApp({
 }) {
   return (
     <StyledTop {...props}>
-      <IconContainer>
-        {icon}
-      </IconContainer>
+      <IconContainer>{icon}</IconContainer>
       <StyledCard>
         <Top>
           <Title>{title}</Title> <IconElipse />
